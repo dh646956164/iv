@@ -2,7 +2,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-# 数据集路径
+#   数据集路径
 earthquake_data = pd.read_csv('Significant Earthquake Dataset 1900-2023.csv')
 
 # 加载数据
