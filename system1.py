@@ -12,7 +12,7 @@ earthquake_data = pd.read_csv('Significant Earthquake Dataset 1900-2023.csv')
 earthquake_data = pd.read_csv('Significant Earthquake Dataset 1900-2023.csv')
 
 # 预处理数据集
-earthquake_data['Year'] = pd.to_datetime(earthquake_data['Time']).dt.year
+earthquake_data['Year'] = pd.to_datetime(earthquake_data['Time']).dt.year.astype(int)
 
 # 定义应用布局
 st.title("Earthquakes Analysis")
